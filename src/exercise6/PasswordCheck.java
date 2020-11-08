@@ -28,7 +28,10 @@ public class PasswordCheck {
          } if (digitCount<2){
            valid = false;
          } if(valid){
+            System.out.println("Password valid!");
            break;
+         } else{
+           System.out.println("Password invalid!");
          }
         }
     }
