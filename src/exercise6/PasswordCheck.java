@@ -10,13 +10,13 @@ public class PasswordCheck {
          String password = input.nextLine();
          boolean valid = true;
          int digitCount = 0;
-         if (password.length<8){
+         if (password.length()<8){
            valid = false;
            continue;
          } else{
-           for(int i=0; i<password.length; i++){
+           for(int i=0; i<password.length(); i++){
             if (Character.isDigit(password.charAt(i))){
-              digitCount++
+              digitCount++;
             }
              if (!Character.isLetterOrDigit(password.charAt(i))){
                valid = false;
