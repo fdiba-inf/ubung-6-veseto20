@@ -7,7 +7,9 @@ public class PasswordCheck {
         Scanner input = new Scanner(System.in);
 
         while(true){
-         String password = input.nextLine();
+        System.out.println("Enter your password:");          
+
+          String password = input.nextLine();
          boolean valid = true;
          int digitCount = 0;
          if (password.length()<8){
